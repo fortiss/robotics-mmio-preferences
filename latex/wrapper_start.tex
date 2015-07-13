@@ -1,0 +1,201 @@
+\documentclass[	pdftex, 
+a4paper,
+12pt, DIV11, BCOR5mm,
+parskip,								
+numbers=noenddot,
+final
+%draft
+]{scrartcl}
+\makeatletter %%%%%%%%%%%%%%%%%%%%				% @ zu einem TeX-Zeichen machen
+
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts} 	
+\usepackage{scrhack}
+
+\renewcommand{\sffamily}{\rmfamily}
+
+\usepackage[ngerman, american]{babel}
+\usepackage[T1]{fontenc}		% use T1 font encoding
+\usepackage[latin1]{inputenc}		% input is UTF-8 encoded
+\usepackage[scaled=1.06]{libertine} \usepackage[libertine]{newtxmath}
+\nonfrenchspacing			% Nach Satzende groesserer Abstand
+
+
+\usepackage[pdfpagelabels,
+bookmarksopen,
+pdfstartview={FitV},
+plainpages=false,
+breaklinks=true,
+linkbordercolor={1 1 1},
+citebordercolor={1 1 1},
+urlbordercolor={1 1 1},
+hidelinks,
+pdftex,
+pdfauthor={Stefan Profanter},
+pdftitle={Questionnaire - Analysis and Semantic Modeling of Modality Preferences in Industrial Human-Robot Interaction},
+pdfkeywords={Intuitive programming, task based programming, input modalities, output modalities, robots, industrial robots, multimodal, knowledge database},           
+]{hyperref}
+
+\author{Stefan Profanter}
+\title{Questionnaire - Analysis and Semantic Modeling of Modality Preferences in Industrial Human-Robot Interaction}
+\usepackage{hyperxmp}
+\hypersetup{
+	pdfauthor={Stefan Profanter},
+	pdfcopyright={Copyright (C) 2015 by Stefan Profanter.  All rights reserved.},
+	pdflicenseurl={http://www.profanter.me}
+}
+
+
+
+% ------------------------------------------------------------------------
+%	Grafics
+% ------------------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{subfigure}
+%
+% ------------------------------------------------------------------------
+%	extended Tables
+% ------------------------------------------------------------------------
+\usepackage{tabularx}
+\usepackage{booktabs}
+%
+% ------------------------------------------------------------------------
+%	source
+% ------------------------------------------------------------------------
+\usepackage{listings}
+\usepackage[usenames,dvipsnames,table]{xcolor}
+\definecolor{tableShade}{gray}{0.97}
+
+\usepackage{todonotes}
+\newcommand{\todoi}[1]{\todo[inline]{#1}}
+
+%\usepackage{keystroke}
+\usepackage{tikz}
+\newcommand*\keystroke[1]{%
+	\tikz[baseline=(key.base)]
+	\node[%
+	draw,
+	fill=white,
+	rectangle,
+	inner sep=1pt,
+	rounded corners=1pt,
+	line width=0.5pt,
+	font=\scriptsize\sffamily
+	](key) {#1\strut}
+	;
+}
+
+%\usepackage[os=mac, mackeys=symbols]{menukeys}
+
+\definecolor{graybkg}{RGB}{243,243,243}
+
+\lstset{
+	basicstyle=\small,
+	identifierstyle=,
+	stringstyle=\ttfamily,
+	showstringspaces=false,
+	tabsize=2,
+	emph={do, while, if, __stdcall},
+	emphstyle=,
+	morekeywords={do, while, if, else, __stdcall},
+	keywordstyle=\color{blue},
+	commentstyle=\color{green},
+	stringstyle=\color{red},
+	backgroundcolor=\color{graybkg},
+}%
+% ------------------------------------------------------------------------
+%	Kapitelteaser - nimmt 2 Parameter:
+% 1) ein Zitat
+% 2) der Verfasser
+% ------------------------------------------------------------------------
+%
+%\newcommand{\teaser}[2]{
+%	\vspace{1.5cm}														% Abstand nach oben
+%	\parbox{11cm}{\Large{\textit{#1}}}\\
+%	\vspace{1em}
+%	\parbox{9cm}{\begin{flushright}#2\end{flushright}}
+%	\newpage
+%}
+%
+% ------------------------------------------------------------------------
+%	Erweiterung um MetaPost-Dateien direkt einzubinden.
+% ------------------------------------------------------------------------
+\makeatletter
+\@ifundefined{pdfoutput}{}{\DeclareGraphicsRule{*}{mps}{*}{}}
+\makeatother
+
+% ------------------------------------------------------------------------
+%	Fuzeilen in \caption einer float Umgebung verwenden.
+% http://www.tex.ac.uk/tex-archive/macros/latex/contrib/ccaption/ccaption.pdf
+% ------------------------------------------------------------------------
+%\usepackage[subfigure,caption2]{ccaption}
+%\usepackage[subfigure]{ccaption}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+\usepackage[ruled]{algorithm2e}
+%\usepackage{dsfont}
+
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+
+%\usepackage{todonotes}
+%\newcommand{\fix}[1]{\todo[noline, inline]{#1}} 
+\usepackage{algorithmic}
+
+\usepackage{epstopdf}
+
+\usepackage{placeins}
+
+\usepackage{units}
+
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\usepackage[toc,page]{appendix}
+
+\usepackage{changepage}
+\usepackage{tabularx,ragged2e}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{pdflscape}
+\usepackage{nameref}
+
+\begin{document}
+	
+
+\newenvironment{question}[2]{
+	%\begin{minipage}[t]{\textwidth}
+		\begin{minipage}[t]{7mm}{\bf#1.}\end{minipage} \begin{minipage}[t]{\textwidth-7mm}{\bf #2}\nopagebreak[4]\end{minipage}
+		\begin{adjustwidth}{7mm}{0cm}
+}{
+		\end{adjustwidth}
+	%\end{minipage}
+}
+\newcommand{\radio}[1]{\makebox[0.5cm][l]{$\bigcirc$} #1}
+%\newcommand{\radio}[1]{\begin{minipage}[t]{7mm}{$\bigcirc$}\end{minipage}\begin{minipage}[t]{\textwidth-7mm}#1\end{minipage}}
+\newcommand{\radion}[1]{\radio{#1}\\}
+
+\newcommand*{\textdoubletriangle}{%
+  \resizebox{!}{\heightof{X}}{%
+    \vbox{%
+      \hbox{$\blacktriangle$}%
+      \nointerlineskip
+      \kern.75ex
+      \hbox{$\blacktriangledown$}%
+    }%
+  }%
+}
+
+\newcommand\bigblacktriangleupdown{\vcenter{\hbox{${\textstyle\blacktriangle}\atop{\textstyle\blacktriangledown}$}}}
+\newcommand{\sort}[1]{\makebox[0.2cm][l]{\textdoubletriangle} #1\\}
+\newcommand{\specialcell}[2][t]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\specialcelll}[2][t]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+\newcommand{\specialcells}[2][t]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}

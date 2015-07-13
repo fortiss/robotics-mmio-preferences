@@ -1,0 +1,225 @@
+\input{latex/wrapper_start}
+
+\section{German Questionnaire}
+\begin{otherlanguage}{ngerman}
+	
+\subsection{Hintergrund Informationen}
+
+\begin{question}{1}{
+		
+		Wie alt bist du?}
+	Alter: \fbox{
+		\begin{minipage}{2cm}
+			\hfill\vspace{1.2em}
+		\end{minipage}
+	} Jahre alt.
+\end{question}
+
+
+\begin{question}{2}{Was ist dein Geschlecht?}
+	\radio{männlich}\hspace{1cm}
+	\radio{weiblich}
+\end{question}
+
+
+
+\begin{question}{3}{Wie gut kennst du dich mit Computern aus? Ich wei wie man}
+	\radion{Anfänger: ... den PC einschaltet und den Browser öffnet}
+	\radion{Grundkenntnisse: ... Programme auf meinem PC bedient und mit Dateien umgeht}
+	\radion{Fortgeschritten: ... neue Hardware hinzufügt und neue Software installiert}
+	\radio{Experte: ... programme entwickelt und wie die Computer-Hardware funktioniert}
+\end{question}
+
+
+\begin{question}{4}{Wie viel weißt du über Robotik?}
+	\radion{Nicht so viel: Ich habe über Roboter gelesen/gehört kenn mich aber nicht so gut aus}
+	\radion{Hobby Robotiker: Ich entwickle/programmiere kleine Roboter in meiner Freizeit}
+	\radio{Ich kenn mich gut aus: ich studiere Robotik, Informatik oder ähnliche Ingenieurswissenschaf}
+\end{question}
+
+
+\begin{question}{5}{Hast du schon mal ein TeachPad zur Programmierung eines Roboters verwendet?}
+	\radion{Nein, ich weiß nicht mal, was ein TeachPad ist.}
+	\radion{Ich weiß was ein TeachPad ist, aber habe noch nie einen Roboter damit programmiert.}
+	\radio{Ja, ich habe bereits einen Roboter mit einem TeachPad programmiert.}
+\end{question}
+
+\subsection{Erwartungen}
+
+
+\begin{question}{6}{Stelle dir eine einfache Pick \& Place Aufgabe vor, wo der Roboter ein Teil von einer Palette greifen und dieses auf den Tisch ablegen soll.\\
+Wie lange schätzt du die Zeit, die man benötigt, um diese Aufgabe einem Roboter beizubringen (bei bisher verwendeter Systeme in der Industrie)?}
+	\fbox{
+		\begin{minipage}{2cm}
+			\hfill\vspace{1.2em}
+		\end{minipage}
+	} Minuten
+\end{question}
+
+Für jeden folgenden Parameter ordne die Eingabemodalitäten in absteigender Reihenfolge danach, welche du am meisten bevorzugst. (Oben: am meisten bevorzugt, unten: wenigesten bevorzugt)
+
+
+\begin{question}{7}{Parameter: Objekt auswählen}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{8}{Parameter: Position zum Ablegen des Objekts auf dem Tisch}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{9}{Parameter: Setzen der Positionen für das Zusammensetzen zweier Objekte}
+	\sort{Stift Eingabe}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{10}{Parameter: Punkt auf dem Objekt auswählen}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{11}{Parameter: Kante auf dem Objekt auswählen}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+\subsection{Erfahrung}
+
+
+\begin{question}{12}{Ordne die Eingabemodalitäten basierend auf die erfahrene kognitive Belastung (bei welcher Modalität musstest du am meisten Nachdenken, wo war am meisten Konzentration nötig). Oben = hohe kognitive Belastung, unten = geringe kognitive Belastung}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+Jetzt ordne die folgenden Modalitäten nochmal. Diesmal verwende die Erfahrung aus dem praktischen Teil und ordne die Modalitäten basieren auf welche du am meisten bevorzugt hast. (Oben: am meisten bevorzugt, unten: am wenigsten bevorzugt)
+
+
+\begin{question}{13}{Parameter: Wähle ein Objekt}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{14}{Parameter: Position zum Ablegen des Objekts auf dem Tisch}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{15}{Parameter: Setzten der Positionen für das Zusammensetzen zweier Objekte}
+	\sort{Stift Eingabe}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{16}{Parameter: Punkt auf dem Objekt auswählen}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+
+\begin{question}{17}{Parameter: Kante auf dem Objekt auswählen}
+	\sort{Touch Eingabe}
+	\sort{Stift Eingabe}
+	\sort{Zeigen mit der Hand}
+	\sort{Sprache}
+\end{question}
+
+\subsection{Meinung}
+
+
+\begin{question}{18}{Was ist deine Meinung bezüglich folgender Aussagen?}
+	\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+	\noindent
+	\begin{tabularx}{\textwidth}{p{5cm} *5{>{\Centering}X}}
+		\hiderowcolors
+		&\tiny  \specialcell{viel einfacher\\als erwartet} & &\tiny wie erwartet & &\tiny \specialcell{deutlich kompli-\\zierter als ich dachte}\\
+		\showrowcolors 
+		verwenden der Eingabemodalitäten zur Programmierung des Roboters war & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Touch Eingabe war & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Spracheingabe war & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Gesten Eingabe war & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Stift Eingabe war & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Insgesamt war die Verwendung des Systems zum Programmieren des Roboters & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+	\end{tabularx}
+\end{question}
+
+
+\begin{question}{19}{Wie hoch schätzt du die Zeiteinsparung (in Prozent) bei Verwendung der vorherigen Eingabemodalitäten im Vergleich zur Verwendung eines TeachPads? (Nur angezeigt, wenn der Benutzer weiß, was ein TeachPad ist, siehe Frage 5)}
+	Ein Wert von 25\% bedeutet, dass die Eingabemodalitäten 75 sekunden benötigen, wenn die Programmierung mit dem TeachPad 100 Sekunden dauerte.\\
+	\fbox{
+		\begin{minipage}{2cm}
+			\hfill\vspace{1.2em}
+		\end{minipage}
+	} \% Zeitersparnis.
+\end{question}
+
+
+\begin{question}{20}{Was denkst du zu den folgenden Aussagen?}
+	\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+	\noindent
+	\begin{tabularx}{\textwidth}{p{5cm} *6{>{\Centering}X}}
+		\hiderowcolors
+		&\tiny \specialcell{stimme über-\\haupt nicht zu} & \tiny \specialcell{stimme nicht\\zu} &\tiny \specialcell{stimme eher\\nicht zu} &\tiny \specialcell{stimme eher\\zu} &\tiny \specialcell{stimme zu} &\tiny \specialcell{stimme voll-\\kommen zu} \\
+		\showrowcolors 
+		Programmieren des Roboters mit multimodaler Eingabe macht Spaß & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Das System sollte keine Auswahl an Modalitäten bieten, sondern nur die am Besten geeignete anbieten & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Die Verwendung des Systems ist natürlich & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Spracheingabe ist genau genug in lauter industrieller Umgebung & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Ich fühle mich sicherer, wenn weniger Eingabemodalitäten zur Auswahl stehen & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Spracheingabe ist intuitiv & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Stift-Eingabe ist intuitiv & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Touch-Eingabe ist intuitiv & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Gesten Eingabe (Zeigen mit der Hand) ist intuitiv & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Tastatur \& Maus ist intuitiv & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Es war schwer, die verschiedenen Modalitäten zu verstehen & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Insgesamt bin ich mit der Leichtigkeit der Ausführung der Aufgaben in den Szenarien zufrieden & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Insgesamt bin ich mit der benötigten Zeit zur durchführung der Aufgaben zufrieden & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+	\end{tabularx}
+\end{question}
+
+
+\begin{question}{21}{Jetzt stell dir vor du arbeitest in einer Fabrik und deine tägliche Aufgabe ist es, Industrieroboter zu programmieren. Beantworte folgende Fragen:}
+	\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+	\noindent
+	\begin{tabularx}{\textwidth}{p{5cm} *6{>{\Centering}X}}
+		\hiderowcolors
+		&\tiny \specialcell{stimme über-\\haupt nicht zu} & \tiny \specialcell{stimme nicht\\zu} &\tiny \specialcell{stimme eher\\nicht zu} &\tiny \specialcell{stimme eher\\zu} &\tiny \specialcell{stimme zu} &\tiny \specialcell{stimme voll-\\kommen zu} \\
+		\showrowcolors 
+		Verwenden des Systems in meiner Arbeit würde mir ermöglichen, Aufgaben schneller zu erledigen & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Die Verwendung des Systems würde meine Arbeitsleistung erhöhen & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Die Verwendung des Systems würde meine Produktivität steigern & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Die Verwendung des Systems würde meine Arbeit verlangsamen und die Effizienz vermindern & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Die Verwendung des Systems würde meinen Job einfacher machen & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Ich würde das System nützlich finden & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Lernen das System zu verwenden wäre einfach für mich & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Die Interaktion mit dem System wäre klar und verständlich & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Das System würde meine Arbeit komplizierter machen & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Es wäre einfach für mich, ein Experte in dem System zu werden & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Ich fände das System kompliziert zu bedienen & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+	\end{tabularx}
+\end{question}
+\end{otherlanguage}
+
+\input{latex/wrapper_end}

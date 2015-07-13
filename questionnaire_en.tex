@@ -1,0 +1,226 @@
+\input{latex/wrapper_start}
+
+\section{English Questionnaire}
+
+\subsection{Background Information}
+\label{app:questionnaire_background}
+
+\begin{question}{1}{How old are you?}
+	Age: \fbox{
+		\begin{minipage}{2cm}
+			\hfill\vspace{1.2em}
+		\end{minipage}
+	} years old.
+\end{question}
+
+
+\begin{question}{2}{What's your gender?}
+	\radio{male}\hspace{1cm}
+	\radio{female}
+\end{question}
+
+
+
+\begin{question}{3}{What's your expertise in using computers? I know how to ...}
+	\radion{Beginner: ... switch it on and open the browser}
+	\radion{Basic: ... use most of the programms installed on my PC and handle files}
+	\radion{Advanced: ... add new hardware and install new software}
+	\radio{Expert: ... program new software and how the computer hardware works}
+\end{question}
+
+
+\begin{question}{4}{How much do you know about robotics?}
+	\radion{Not that much: I read/heard about robots but don't know that much about robotics}
+	\radion{Hobby roboticist: I build/program small robots in my freetime}
+	\radio{A lot: I studied robotics, computer science or similar engineering course}
+\end{question}
+
+
+\begin{question}{5}{Did you already use a TeachPad to program a robot?}
+	\radion{No, I don't even know what a TeachPad is.}
+	\radion{I know what a TeachPad is, but never programmed a robot with it.}
+	\radio{Yes, I already programmed a robot with a TeachPad}
+\end{question}
+
+\subsection{Expectations}
+\label{app:questionnaire_expectation}
+
+
+\begin{question}{6}{Think about a simple pick and place task, where the robot has to pick up an object from a palette and place it on the table with a specific orientation.\\
+		What's your estimate in minutes on how long it would take to teach a robot these steps (using current systems used in production)?}
+	\fbox{
+		\begin{minipage}{2cm}
+			\hfill\vspace{1.2em}
+		\end{minipage}
+	} minutes
+\end{question}
+
+For each of the following parameters order the input modalities in descending order according to which input modality you would prefer the most. (Most preferred on top, least preferred on bottom)
+
+
+\begin{question}{7}{Parameter: Select an object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{8}{Parameter: Set a location where to place an object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{9}{Parameter: Set assembly constraints between two objects}
+	\sort{Pen Input}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{10}{Parameter: Select a point on the object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{11}{Parameter: Select an edge on the object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+\subsection{Experience}
+\label{app:questionnaire_experience}
+
+
+\begin{question}{12}{Order the input modalities based on your experienced cognitive load (which modality required the most concentration, where did you have to think the most). Top = high cognitive load, bottom = less cognitive load}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+Now order the input modalities again. This time use your experience from previous tasks and order them according to which you preferred the most. (Most preferred on top, least preferred on bottom)
+
+
+\begin{question}{13}{Parameter: Select an object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{14}{Parameter: Set a location where to place an object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{15}{Parameter: Set assembly constraints between two objects}
+	\sort{Pen Input}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{16}{Parameter: Select a point on the object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+
+\begin{question}{17}{Parameter: Select an edge on the object}
+	\sort{Touch Input}
+	\sort{Pen Input}
+	\sort{Point by hand}
+	\sort{Speech}
+\end{question}
+
+\subsection{Opinion}
+\label{app:questionnaire_opinion}
+
+
+\begin{question}{18}{What are your expectations on the following statements?}
+	\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+	\noindent
+	\begin{tabularx}{\textwidth}{p{5cm} *5{>{\Centering}X}}
+		\hiderowcolors
+		&\tiny  \specialcell{a lot easier\\than expected} & &\tiny as expected & &\tiny \specialcell{much more compli-\\cated than I thought}\\
+		\showrowcolors 
+		using the input modalities for programming a robot was & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Touch input was & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Speech input was & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Gesture input was & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Input by pen was & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+		Overall, using this system to program a robot was & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\
+	\end{tabularx}
+\end{question}
+
+
+\begin{question}{19}{How much do you think is the time saving (in percentage) of using the input modalities compared to using a TeachPad? (Only shown if user knows what a TeachPad, see Question 5)}
+	A value of 25\% means that using these input modalities requires 75 seconds, when using the TeachPad required 100 seconds.\\
+	\fbox{
+		\begin{minipage}{2cm}
+			\hfill\vspace{1.2em}
+		\end{minipage}
+	} \% time saving.
+\end{question}
+
+
+\begin{question}{20}{What do you think about the following statements?}
+	\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+	\noindent
+	\begin{tabularx}{\textwidth}{p{5cm} *6{>{\Centering}X}}
+		\hiderowcolors
+		&\tiny \specialcell{strongly\\disagree} & \tiny \specialcell{disagree} &\tiny \specialcell{somewhat\\disagree} &\tiny \specialcell{somewhat\\agree} &\tiny \specialcell{agree} &\tiny \specialcell{strongly\\agree} \\
+		\showrowcolors 
+		It's fun to program a robot using multimodality (different types of input) & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		The system should not allow to select a modality. It should pre-select the most suited one for each task. & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Using the System is natural & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Speech input is accurate enough for loud industrial environments. & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		I feel more secure if there are less modalities to choose & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		It's intuitive to use speech input & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		It's intuitive to use pen input & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		It's intuitive to use touch input & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		It's intuitive to use gesture input (point by hand) & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		It's intuitive to use keyboard \& mouse & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		It was difficult to understand how to use the different modalities & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Overall, I am satisfied with the ease of completing the tasks in the scenarios & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Overall, I am satisfied with the amount of time it took to complete the tasks & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+	\end{tabularx}
+\end{question}
+
+
+\begin{question}{21}{Now imagine you are a factory worker and programming industrial robots is your daily job. Answer the following questions:}
+	\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+	\noindent
+	\begin{tabularx}{\textwidth}{p{5cm} *6{>{\Centering}X}}
+		\hiderowcolors
+		&\tiny \specialcell{strongly\\disagree} & \tiny \specialcell{disagree} &\tiny \specialcell{somewhat\\disagree} &\tiny \specialcell{somewhat\\agree} &\tiny \specialcell{agree} &\tiny \specialcell{strongly\\agree} \\
+		\showrowcolors 
+		Using the system in my job would enable me to accomplish tasks more quickly & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Using the system would improve my job performance & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Using the system in my job would increase my productivity & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Using the system would slow me down and decrease the efficiency of my job & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Using the system would make it easier to do my job & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		I would find the system useful in my job & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Learning to operate the system would be easy for me & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		My interaction with the system would be clear and understandable & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		Using the system would make my job more complicated & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		It would be easy for me to become skillful at using the system & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+		I would find the system difficult to use & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$\\
+	\end{tabularx}
+\end{question}
+
+\input{latex/wrapper_end}
+
